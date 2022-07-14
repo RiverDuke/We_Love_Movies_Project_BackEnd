@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.boolean("is_showing");
   });
 };
-
+//up and down functions allow rollbacks of migrations
 exports.down = function (knex) {
   return knex.schema.dropTable("movies_theaters");
 };
